@@ -1,0 +1,20 @@
+body{
+    font-family:SimSun;
+    font-size:15px;
+    font-weight:bold;
+    background-color: rgb(244, 247, 246);
+    background-image: url(https://icweiliimg1.pstatp.com/weili/bl/263965082316439739.jpg);
+}
+a[href]{
+    color:rgb(16, 66, 244);
+}
+ul>li{
+  color:rgba(14, 14, 14, 0.929);
+}
+h2{
+    color:rgb(235, 58, 9);
+    background-color:rgb(179, 190, 112);
+    padding:5px 5px;
+    box-shadow:10px 10px 5px #c1e38d ;
+    border-radius: 3px;
+}
