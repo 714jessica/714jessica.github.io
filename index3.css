@@ -1,4 +1,3 @@
-
 body{
     margin:0 auto;
     display:flex;
@@ -76,4 +75,12 @@ body{
 .item{
     background-color: coral;
     flex:auto;
+}
+@media(max-width:600px){
+    .box1 .containner{
+        flex-direction: column;
+    }
+    .box2 .containner{
+        flex-direction: column;
+    }
 }
