@@ -76,7 +76,7 @@ body{
     background-color: coral;
     flex:auto;
 }
-@media(max-width:600px){
+@media(max-width:400px){
     .box1 .containner{
         flex-direction: column;
     }
