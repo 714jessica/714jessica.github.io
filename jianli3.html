@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0 auto;
+            background-image: url("照片6.jpg");
+        }
+        .header{
+            position: fixed;
+            width:100%;
+            background-color: rgb(234, 218, 195); 
+            border-radius: 10px;
+            height:40px;
+            font-size: 30px;
+            font-family:'微软雅黑';
+            color: rgb(219, 110, 71);
+        }
+        .sec1{
+            background-color: rgb(232, 174, 210);
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgb(232, 115, 164);
+            color: rgb(224, 57, 124);
+            border-radius: 5px;
+            margin-top: 10px;
+            padding:10px 10px;
+            animation: example 3s linear 2s infinite alternate-reverse;
+        }
+        .pic{
+            height:200px;
+            margin-top:20px;
+            background-color: rgb(244, 220, 245);
+        }
+        img{
+            height:200px;
+            width: 200px;
+            transition: width 2s,height 2s,transform 2s;
+        }
+        img:hover{
+            height:100px;
+            width:100px;
+            transform:rotate(360deg);
+        }
+        .content1{
+            font-size: 15px;
+            color: rgb(207, 112, 162);
+            text-shadow: none;
+            display: flex;
+            height:600px;
+            background-color: rgb(244, 220, 245);
+            margin-top: 20px;
+        }
+        .content2{
+            height:200px;
+            font-size: 15px;
+            color: rgb(207, 112, 162);
+            text-shadow: none;
+            margin-top: 20px;
+            background-color: rgb(244, 220, 245);
+        }
+        .content{
+            display:flex;
+            gap:10px;
+            padding-top: 40px;
+        }
+        .left{
+            margin-left:10px;
+            flex:none;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        .right{
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        tr:hover {background-color: #f5f5f5;}
+        
+        @media (max-width:600px){
+            .content{
+                flex-direction: column;
+            }
+        }
+        @keyframes example{
+            from{background-color: rgb(232, 174, 210) ;}
+            to{background-color: rgb(238, 220, 180);}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <b>庞孟雨的简历</b>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="sec1"><b>个人照片</b>
+                 <div class="pic">
+                    <img src="zhaopian.jpg" width="100" alt="我的图片" title="我是庞孟雨">
+                 </div>
+            </div>
+            <div class="sec1"><b>个人介绍</b>
+                <div class="content1">
+                    <ul>
+                    <li><b>姓名：</b>庞孟雨</li>
+                    <li><b>性别：</b>女</li>
+                    <li><b>电话：</b>1336186122</li>
+                    <li><b>邮箱：</b>2064926487@qq.com</li>
+                    <li><b>生日：</b>2003.07.14</li>
+                    <li><b>学校：</b>上海对外经贸大学</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="sec1"><b>教育背景</b>
+                <div class="content2">
+                    <table style="width:100% "border=1 cellspacing="0">
+                        <tr>
+                            <td><b>时间</b></td>
+                            <td><b>学校</b></td>
+                            <td><b>职务</b></td>
+                        </tr>
+                        <tr>
+                            <td>2021.9.15-至今</td>
+                            <td>上海对外经贸大学</td>
+                            <td>学生</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sec1"><b>实习经历</b>
+            <div class="content1">
+                <ol>
+                    <li>uide</li>
+                    <li>uide</li>
+                    <li>ide</li>
+                    <li>uide</li>
+                    <li>uide</li>
+                </ol>
+            </div>
+            </div>
+        </div>
+    </div>
