@@ -7,30 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let n=parseInt(prompt("请输入菱形的边长："))
-        for(let i=1;i<=n;i++){
-            for(let j=1;j<=n+i-1;j++){
-                    if(j+i<=n)
-                        // console.log('-')
-                        document.write('-');
-                    else
-                        //console.log('*')
-                        document.write('*');
-            }
-            document.write("<br>");
-        }
-        for(let i=1;i<=n-1;i++){
-            for(let j=1;j<=2*n-1-i;j++){
-                if(j+i<=2*i)
-                    //console.log('-')
-                    document.write('-');
-                else
-                    //console.log('*')
-                    document.write('*');
-            }
-            document.write("<br>");
-        }
-    </script>
+   <!-- <script src="zuoye4.js"></script> -->
+   <script>
+    function pow(a){
+         return a*a*a
+    }
+    for(let i=100;i<1000;i++){
+        let bai=parseInt(i/100);
+        let shi=parseInt(i/10%10);
+        let ge=parseInt(i%10);
+        if(pow(bai)+pow(shi)+pow(ge)==i)
+            console.log(i)
+    }
+   </script>
+
 </body>
 </html>
