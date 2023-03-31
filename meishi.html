@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推荐的美食</title>
+    <style>
+        body{
+            margin:0;
+            background-image: url("美食图片1.jpg");
+        }
+        .content{
+            display:flex;
+        }
+        .head{
+            /* background-color: burlywood; */
+            height:200px;
+            font-size: 70px;
+            line-height: 200px;
+            text-align: center;
+            color: rgb(225, 69, 21);
+            font-family: monospace;
+        }
+        b{
+            animation: shandong 0.5s ease 0s infinite alternate;
+        }
+        .left{
+            flex:auto;
+            /* background-color: antiquewhite; */
+            display:flex;
+            height:800px;
+            width:50%;
+            flex-direction: row;
+            gap:10px;
+            margin:0 auto;
+        }
+        .left1{
+            flex:auto;
+        }
+        .right1{
+            flex:auto;
+        }
+        .right{
+            flex:auto;
+            display:flex;
+            /* background-color: rgb(227, 183, 127); */
+            width:50%;
+            gap:10px;
+            margin:0 auto;
+        }
+        .card1{
+            flex:auto;
+            border:solid 5px rgb(236, 106, 25);
+        }
+        .card2{
+            flex:auto;
+            border:solid 5px rgb(236, 106, 25);
+        }
+        img{
+            height:200px;
+            width:100%;
+        }
+        @keyframes shandong{
+            10%{
+                margin-top:10px;
+            }
+            40%{
+                margin-right:10px;
+            }
+            50%{
+                margin-left:10px;
+                /* 字符上下浮动 */
+                text-shadow: 3px 4px 5px rgb(241, 130, 44),
+                3px 5px 5px rgb(239, 155, 58),
+                3px 6px 5px rgb(204, 153, 45),
+                3px 7px 5px rgb(239, 194, 58),
+                3px 8px 5px rgb(230, 90, 43);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head"><b>强力推荐!</b></div>
+<div class="content">
+    <div class="left">
+        <div class="left1">
+            <div class="card1"><img src="meishi1.jpg" title="意式肉酱面" ></div>
+            <div class="card1"><img src="meishi2.jpg" ></div>
+            <div class="card1"><img src="meishi3.jpg"></div>
+        </div>
+       <div class="right1">
+           <div class="card1"><img src="meishi4.jpg" ></div>
+           <div class="card1"><img src="meishi5.jpg" ></div>
+           <div class="card1"><img src="meishi7.jpg"></div>
+       </div>
+    </div>
+    <div class="right">
+        <div class="left1">
+            <div class="card2"><img src="meishi6.jpg"></div>
+           <div class="card2"><img src="meishi11.jpg"></div>
+           <div class="card2"><img src="meishi8.jpg" ></div>
+        </div>
+        <div class="right1">
+            <div class="card2"><img src="meishi9.jpg"></div>
+            <div class="card2"><img src="meishi10.jpg"></div>
+            <div class="card2"><img src="meishi12.jpg"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

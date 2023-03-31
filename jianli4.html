@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            display: flex;
+            flex-direction: column;
+        }
+        .head .content{
+            margin:0 auto;
+            background-color: bisque;
+        }
+        .head{
+            background-image: url("海绵宝宝12.jpg");
+            height:260px;
+            width:100%; 
+            transform: rotate(360deg);
+            font-size: 50px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 250px;
+            color:rgb(21, 20, 20);
+            font-weight: bold;
+            /* position:fixed; */
+        }
+        .head ul{
+            margin:10px auto;
+            font-size:20px;
+            width :100%;
+            height:40px;
+            padding:0px;
+            border:1px solid #000;
+            display:flex;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            display:block;
+            width: 370px;
+            height:40px;
+            flex: auto;
+            font-family: Microsoft Yahei;
+            line-height: 40px;
+            background-color: rgb(238, 233, 139);
+            margin:0;
+            color:hotpink;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover{
+            background-color: rgb(49, 191, 238);
+        }
+        .footer{
+            background-image: url("3c2230f9c3.jpg");
+            filter:opacity(0.6);
+            height:220px;
+            width:100%;
+        }
+        .content1{
+            margin-top:40px;
+            color: rgb(201, 106, 210);
+            height:500px;
+            font-size: 25px;
+            display:flex;
+            background-color: rgb(237, 233, 166);
+            animation: example 3s linear 2s infinite alternate-reverse;
+        }
+        .left{
+            background-size: 100%,100%;
+            width:22%;
+        }
+        .right{
+            display: flex;
+            gap:10px;
+        }
+        .right .card{
+            font-size: 25px;
+            color: rgb(201, 106, 210);
+            text-shadow: none;
+            height:600px;
+            margin-top: 20px;
+            flex:auto;
+        }
+        img{
+            height:100%;
+            width: 100%;
+            transition: width 2s,height 2s,transform 2s;
+        }
+        img:hover{
+            height:100%;
+            width:100%;
+            transform:rotate(360deg);
+        }
+        @media (max-width:600px){
+            .content1{
+                flex-direction: column;
+                height:auto;
+            }
+            .left{
+                width:100%;
+            }
+            .right{
+                flex-direction: column ;
+            }
+
+        }
+        @keyframes example{
+            from{background-color: rgb(237, 233, 166);}
+            to{background-color: rgb(128, 206, 214);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head" style="text-align: center;">欢迎来到我的世界！
+        <div class="content">
+        <ul>
+            <li><a href="form1.html">首页</a></li>
+            <li><a href="meishi.html">推荐美食</a></li>
+            <li><a href="lianxi.html">联系我</a></li>
+            <li><a href="form1.html">注册</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content1">
+            <div class="left">
+                <h1 style="text-align: center;"><b>个人照片</b></h1>
+                <div class="pic"><img src="海绵宝宝3.jpeg" height="300"></div>
+            </div>
+            <div class="right">
+                <div class="card">
+                    <h1 style="text-align: center;"><b>个人介绍</b></h1>
+                    <ul>
+                        <li><b>姓名：</b>庞孟雨</li>
+                        <li><b>性别：</b>女</li>
+                        <li><b>电话：</b>1336186122</li>
+                        <li><b>邮箱：</b>2064926487@qq.com</li>
+                        <li><b>生日：</b>2003.07.14</li>
+                        <li><b>学校：</b>上海对外经贸大学</li>
+                        </ul>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="right"> -->
+                <div class="card">
+                    <h1 style="text-align: center;"><b>实习经历</b></h1>
+                    <ol>
+                        <li>无</li>
+                        <li>无</li>
+                        <li>暂时没有</li>
+                        <li>等待更新</li>
+                        <li>暂无</li>
+                        <li>等待更新</li>
+                    </ol>
+                </div>
+            <!-- </div>
+            <div class="right"> -->
+                <div class="card">
+                    <h1 style="text-align: center;"><b>教育背景</b></h1>
+                    <table style="width:100% "border=1 cellspacing="0">
+                        <tr>
+                            <td><b>时间</b></td>
+                            <td><b>学校</b></td>
+                            <td><b>职务</b></td>
+                        </tr>
+                        <tr>
+                            <td>2021.9.15-至今</td>
+                            <td>上海对外经贸大学</td>
+                            <td>学生</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
