@@ -8,7 +8,8 @@
     <style>
         body{
             margin:0;
-            background-image: url("美食图片1.jpg");
+            background-image: url("3c2230f9c3.jpg");
+            background-size: 100% ,100%;
         }
         .content{
             display:flex;
@@ -19,11 +20,11 @@
             font-size: 70px;
             line-height: 200px;
             text-align: center;
-            color: rgb(225, 69, 21);
-            font-family: monospace;
+            color: rgba(238, 241, 54, 0.356);
+            font-family: "Gill Sans Extrabold",cursive;
         }
         b{
-            animation: shandong 0.5s ease 0s infinite alternate;
+            animation: shandong 0.8s ease 0.5s infinite alternate;
         }
         .left{
             flex:auto;
@@ -51,37 +52,46 @@
         }
         .card1{
             flex:auto;
-            border:solid 5px rgb(236, 106, 25);
-        }
-        .card2{
-            flex:auto;
-            border:solid 5px rgb(236, 106, 25);
+            border:dashed 3px rgb(182, 219, 231);
         }
         img{
             height:200px;
             width:100%;
         }
+        @media (max-width:600px){
+            img{
+                height:100px;
+                width:100%;
+                
+            }
+            .left{
+                flex-direction: column;
+            }
+            .right{
+                flex-direction: column;
+            }
+        }
         @keyframes shandong{
             10%{
-                margin-top:10px;
+                margin-top:7px;
             }
             40%{
-                margin-right:10px;
+                margin-right:5px;
             }
             50%{
-                margin-left:10px;
+                margin-left:5px;
                 /* 字符上下浮动 */
-                text-shadow: 3px 4px 5px rgb(241, 130, 44),
-                3px 5px 5px rgb(239, 155, 58),
-                3px 6px 5px rgb(204, 153, 45),
-                3px 7px 5px rgb(239, 194, 58),
-                3px 8px 5px rgb(230, 90, 43);
+                text-shadow: 3px 4px 3px rgb(21, 225, 225),
+                3px 5px 3px rgb(58, 197, 239),
+                3px 6px 3px rgb(232, 237, 145),
+                3px 7px 3px rgb(227, 239, 58),
+                3px 8px 3px rgb(174, 230, 43);
             }
         }
     </style>
 </head>
 <body>
-    <div class="head"><b>强力推荐!</b></div>
+    <div class="head"><b>快看啊快看啊</b></div>
 <div class="content">
     <div class="left">
         <div class="left1">
@@ -97,14 +107,14 @@
     </div>
     <div class="right">
         <div class="left1">
-            <div class="card2"><img src="meishi6.jpg"></div>
-           <div class="card2"><img src="meishi11.jpg"></div>
-           <div class="card2"><img src="meishi8.jpg" ></div>
+            <div class="card1"><img src="meishi6.jpg"></div>
+           <div class="card1"><img src="meishi11.jpg"></div>
+           <div class="card1"><img src="meishi8.jpg" ></div>
         </div>
         <div class="right1">
-            <div class="card2"><img src="meishi9.jpg"></div>
-            <div class="card2"><img src="meishi10.jpg"></div>
-            <div class="card2"><img src="meishi12.jpg"></div>
+            <div class="card1"><img src="meishi9.jpg"></div>
+            <div class="card1"><img src="meishi10.jpg"></div>
+            <div class="card1"><img src="meishi12.jpg"></div>
         </div>
     </div>
 </div>
