@@ -12,8 +12,14 @@
             flex-direction: column;
         }
         .head .content{
-            margin:0 auto;
             background-color: bisque;
+            margin:10px auto;
+            font-size:20px;
+            width :100%;
+            height:auto;
+            padding:0px;
+            border:1px solid #000;
+            display:flex;
         }
         .head{
             background-image: url("海绵宝宝12.jpg");
@@ -24,34 +30,28 @@
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             line-height: 250px;
             color:rgb(21, 20, 20);
-            font-weight: bold;
-            /* position:fixed; */
+            font-weight: bolder;
         }
-        .head ul{
-            margin:10px auto;
-            font-size:20px;
-            width :100%;
-            height:auto;
-            padding:0px;
-            border:1px solid #000;
+        .title{
+            flex:auto;
+        }
+        .title{
             display:flex;
-        }
-        li{
-            list-style-type: none;
-        }
-        a{
             display:block;
-            width: 370px;
             height:40px;
             flex: auto;
             font-family: Microsoft Yahei;
             line-height: 40px;
             background-color: rgb(238, 233, 139);
             margin:0;
-            color:hotpink;
+            /* color:rgb(173, 234, 50); */
             text-align: center;
             text-decoration: none;
             font-size: 20px;
+        }
+        a{
+            color:rgb(232, 107, 188);
+            text-decoration: none;
         }
         a:hover{
             background-color: rgb(49, 191, 238);
@@ -67,7 +67,7 @@
             margin-top:40px;
             color: rgb(201, 106, 210);
             height:500px;
-            font-size: 25px;
+            font-size: 25vp;
             display:flex;
             background-color: rgb(237, 233, 166);
             animation: example 3s linear 2s infinite alternate-reverse;
@@ -81,7 +81,7 @@
             gap:10px;
         }
         .right .card{
-            font-size: 25px;
+            font-size: 25vp;
             color: rgb(201, 106, 210);
             text-shadow: none;
             height: 500px;
@@ -132,12 +132,10 @@
 <body>
     <div class="head" style="text-align: center;">欢迎来到我的世界！
         <div class="content">
-        <ul>
-            <li><a href="form1.html">首页</a></li>
-            <li><a href="meishi.html">推荐美食</a></li>
-            <li><a href="lianxi.html">联系我</a></li>
-            <li><a href="form1.html">注册</a></li>
-        </ul>
+            <div class="title"><a href="form1.html">首页</a></div></li>
+            <div class="title"><a href="meishi.html">推荐美食</a></div></li>
+            <div class="title"><a href="lianxi.html">联系我</a></div></li>
+            <div class="title"><a href="form1.html">注册</a></div></li>
         </div>
     </div>
     <div class="main">
