@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            width: 600px;
+            height: 400px;
+            background-color: bisque;
+            border: 3px solid #333;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #inner {
+            background-color: aquamarine;
+            width: 2400px;
+            height: 400px;
+            z-index: 1;
+            left: 0px;
+            position: absolute;
+        }
+
+        #inner img {
+            float: left;
+            width: 600px;
+            height: 400px;
+        }
+
+        #buttons {
+            position: absolute;
+            left: 250px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+
+        #buttons button {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fdf8f8;
+            background: #333;
+            border-radius: 50%;
+            cursor: pointer;
+            /* 设定网页浏览时用户鼠标指针的样式,也就是鼠标的图形形状  */
+        }
+
+        #buttons .on {
+            background: #fa1818;
+        }
+
+        .arrow {
+            position: absolute;
+            z-index: 2;
+            top: 180px;
+            display: none;
+            width: 40px;
+            height: 40px;
+            color: #fdf8f8;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 37px;
+            line-height: 39px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #content:hover .arrow {
+            display: block;
+        }
+
+        #prev {
+            left: 20px;
+            text-decoration: none;
+        }
+
+        #next {
+            right: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="inner">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <div id="buttons">
+            <!-- <button onclick="changeImage(1)" class="on"></button>
+            <button onclick="changeImage(2)"></button>
+            <button onclick="changeImage(3)"></button>
+            <button onclick="changeImage(4)"></button> -->
+            <button class="on"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+        <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        <!-- 表示什么都不执行，这样点击时就没有任何反应。 -->
+    </div>
+    <script>
+        let width = 600;
+        let list = document.getElementById("inner");
+        let prev = document.getElementById("prev");
+        let next = document.getElementById("next");
+        let butt = document.querySelectorAll("button")
+        let num = list.children.length; // get img number
+        function animate(offset) {
+            let left = parseInt(getComputedStyle(list).left);
+            let newLeft = left - offset * width;
+            list.style.left = newLeft + "px";
+            if (newLeft <= -num * width) {
+                list.style.left = "0px";
+            }
+            if (newLeft > 0) {
+                list.style.left = -(num - 1) * width + "px";
+            }
+        }
+        function seton(){
+            let left = parseInt(getComputedStyle(list).left);
+            for(let i=0;i<butt.length;i++){
+                if(left===-(i*600)){
+                    for(let j=0;j<butt.length;j++){
+                    if(j==i)
+                        butt[i].className="on";
+                    else
+                        butt[j].className=" ";
+                }
+                break;
+                }
+            }
+        }
+        //点击下面的按钮换图片
+        for (let i = 0; i < butt.length; i++) {
+            butt[i].onclick = function () {
+                for(let j=0;j<butt.length;j++){
+                    if(j==i)
+                        butt[i].className="on";
+                    else
+                        butt[j].className=" ";
+                }
+                let left = parseInt(getComputedStyle(list).left);
+                list.style.left = 0 + "px";
+                animate(i);
+            }
+        }
+        prev.onclick = function () {
+            animate(-1);
+            seton();
+        };
+        next.onclick = function () {
+            animate(1);
+            seton();
+        };
+        //每隔一段时间自动换图片
+        var currentImage = 1;
+        var totalImages = 4;
+        var intervalTime = 3000;
+        setInterval(function () {
+            currentImage++;
+            if (currentImage > totalImages) {
+                currentImage = 1;
+            }
+            animate(1);
+            seton();
+        }, intervalTime);
+    </script>
+</body>
+
+</html>
