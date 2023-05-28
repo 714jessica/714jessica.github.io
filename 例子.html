@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [
+            { title: "apple", value: 0.24, color: "green" },
+            { title: "三星", value: 0.26, color: "yellow" },
+            { title: "华为", value: 0.13, color: "orange" },
+            { title: "oppo", value: 0.17, color: "red" },
+            { title: "小米", value: 0.08, color: "purple" },
+            { title: "其他", value: 0.12, color: "cyan" },
+        ];
+
+        var w = 800;
+        var h = 600;
+        var cx = w / 2;
+        var cy = h / 2;
+        var r = 200;
+        var canvas = document.createElement("canvas")
+        canvas.width = w;
+        canvas.height = h;
+        document.body.appendChild(canvas);
+        var cxt = canvas.getContext("2d");
+        cxt.font = "18px Micorsoft YaHei";
+
+        function isPointInArc(x, y, cx, cy, r, startAngle, endAngle) {
+  const dx = x - cx;
+  const dy = y - cy;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  const angle = Math.atan2(dy, dx);
+  return distance <= r && angle >= startAngle && angle <= endAngle;
+}
+
+canvas.addEventListener('mousemove', (event) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  let found = false;
+
+  for (let i = 0; i < data.length; i++) {
+    const item = data[i];
+    const angle = item.value * 2 * Math.PI;
+    const endAngle = item.beginAngle + angle;
+
+    if (isPointInArc(x, y, cx, cy, r, item.beginAngle, endAngle)) {
+      if (i !== lastk) {
+        lastk = i;
+        drawit(i);
+      }
+      found = true;
+      break;
+    }
+  }
+
+  if (!found && lastk !== -1) {
+    lastk = -1;
+    drawit(-1);
+  }
+});
+
+function drawit(k) {
+  cxt.clearRect(0, 0, w, h);
+  let beginAngle = Math.PI / 6;
+  for (let i = 0; i < data.length; i++) {
+    const item = data[i];
+    const angle = item.value * 2 * Math.PI;
+    const endAngle = beginAngle + angle;
+    item.beginAngle = beginAngle;
+
+    cxt.beginPath();
+    cxt.moveTo(cx, cy);
+    const currentRadius = i === k ? r + 20 : r;
+    cxt.arc(cx, cy, currentRadius, beginAngle, endAngle);
+    cxt.fillStyle = item.color;
+    cxt.fill();
+
+    // 写字
+    const txtAngle = beginAngle + angle / 2;
+    cxt.textAlign = txtAngle >= Math.PI / 2 && txtAngle < (Math.PI * 3) / 2 ? 'end' : 'start';
+    const tx = cx + (currentRadius + 10) * Math.cos(txtAngle);
+    const ty = cy + (currentRadius + 10) * Math.sin(txtAngle);
+    cxt.fillText(item.title + ' ' + item.value * 100 + '%', tx, ty);
+
+    beginAngle = endAngle;
+  }
+}
+let lastk = -1;
+drawit(-1);
+    </script>
+</body>
+</html>
