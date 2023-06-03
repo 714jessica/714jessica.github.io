@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初始页面</title>
+    <style>
+        body {
+            background-image: url('zhuyemaomi.jpg');
+            background-size: 100% 1670px ;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 100px;
+            color: aliceblue;
+            text-shadow: 1px 1px 5px rgb(41, 35, 35);
+        }
+
+        .typing {
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 2em;
+            padding-left: 270px;
+            width: 22em;
+            height: 1.5em;
+            border-right: 1px solid transparent;
+            animation: typing 3s steps(48, end), blink-caret 1s step-end infinite;
+            overflow: hidden;
+            text-shadow: 1px 1px 10px rgb(255, 255, 255);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 650px;
+        }
+
+        .box {
+            width: 300px;
+            height: 550px;
+            margin: 0 15px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 20px;
+            box-sizing: border-box;
+            position: relative;
+            animation: float-up 1.6s ease-in-out;
+        }
+        .box:hover{
+            width: 310px;
+            height: 530px;
+            box-shadow: 5px 5px 20px rgb(241, 237, 237);
+        }
+
+        /* 盒子背景设置 */
+        .box:nth-child(1) {
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.bcf44c4b6bb5af28bd33124638a21927?rik=KwJ6ro0mPltrHw&riu=http%3a%2f%2fwww.kutoo8.com%2fupload%2fthumb%2f486874%2fe7aea07cd8a9bf0e4ca6b06638fa1306_1920x1080.jpg&ehk=3yciP14wl1GTThmUinA36cfM1aok9yhBv9GoF0n%2fTgk%3d&risl=&pid=ImgRaw&r=0');
+        }
+
+        .box:nth-child(2) {
+            background-image: url('chushibiye.png');
+
+        }
+
+        .box:nth-child(3) {
+            background-image: url('chushixiuxue.png');
+
+        }
+
+        .box:nth-child(4) {
+            background-image: url('chushimiaoxing.png');
+
+        }
+        .box a {
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+            font-size: 14px;
+            transform: translate(50%, 50%);
+            text-decoration: none;
+            color: white;
+            /* background-color: black; */
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .box a:hover {
+            transform: translate(50%, 50%) scale(1.1);
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 22em;
+            }
+        }
+
+        /* 光标 */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: currentColor;
+            }
+        }
+
+        /* 页面浮动上来 */
+        @keyframes float-up {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(-2%);
+            }
+            /* to {
+                transform: translateY(0);
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="word">
+        <div class="typing"> 每一只猫咪,都是银河遗落在世间的一颗星星☆</div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>在 <br> 校</h2>
+            <a href="sanhua.html"> 查 <br> 看 <br> 更 <br> 多 <br>▼ </a>
+        </div>
+        <div class="box">
+            <h2>毕<br> 业</h2>
+            <a href="biye.html">查<br> 看<br> 更<br> 多 <br>▼ </a>
+        </div>
+        <div class="box">
+            <h2>休<br> 学</h2>
+            <a href="xiuxue.html">查<br> 看<br> 更<br> 多 <br>▼ </a>
+        </div>
+        <div class="box">
+            <h2>喵<br> 星</h2>
+            <a href="miaoxing.html">查<br> 看<br> 更<br> 多 <br>▼ </a>
+        </div>
+    </div>
+</body>
+
+</html>

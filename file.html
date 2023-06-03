@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>猫咪档案</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            padding-top: 50px;
+            width: 10%;
+            height: 1050px;
+            display: flex;
+            flex-direction: column;
+            color: #f6f6f1;
+            font-size: 28px;
+            text-align: center;
+            background: linear-gradient(rgba(194, 191, 99, 0.807), rgb(235, 186, 243));
+        }
+
+        .sidebar:hover {
+            width: 15%;
+            transition: 1.6s;
+            text-shadow: 5px 5px 10px rgba(89, 89, 67, 0.807);
+            background: linear-gradient(rgba(221, 217, 97, 0.807), rgb(235, 186, 243));
+
+        }
+
+        .menu-item {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-family: STHupo;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+        }
+
+        .submenu-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ccc398;
+            /* border:1px solid #f6f6f1; */
+        }
+
+        .submenu-item:hover {
+            background: #a19b739b;
+
+        }
+
+        .menu-item-wrapper {
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover~.menu-item-wrapper {
+            transform: translateY(400px);
+        }
+
+        .content {
+            width: 90%;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 1098px;
+            overflow: hidden;
+        }
+
+        #content-frame {
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu-item:hover {
+            box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.3);
+        }
+        .hui{
+            margin-right: 70px;
+            font-size: 50px;
+            margin-top: -40px;
+        }
+        a{
+            color: #fff;
+        }
+        a:link{
+            text-decoration: none;
+            color:#fff;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="hui">
+                <a href="aaa.html">⬅</a>
+            </div>
+            <div style="font-size: 40px;font-family: STHupo ;">•ᴗ• <br> 猫 咪 <br> 档 案 <br> <br> <br> <br> </div>
+            <div class="menu-item">在 校>
+                <div class="submenu">
+                    <div style="font-size: 23px" class="submenu-item" onclick="openLink('sanhua.html')">三花&玳瑁></div>
+                    <div style="font-size: 23px" class="submenu-item" onclick="openLink('jvmao.html')">橘猫&橘白></div>
+                    <div style="font-size: 23px" class="submenu-item" onclick="openLink('chunse.html')">纯色></div>
+                    <div style="font-size: 23px" class="submenu-item" onclick="openLink('nainiu.html')">奶牛></div>
+                    <div style="font-size: 23px" class="submenu-item" onclick="openLink('lihua.html')">狸花></div>
+                </div>
+            </div>
+            <div class="menu-item-wrapper">
+                <div class="menu-item" onclick="openLink('biye.html')">毕 业></div>
+                <div class="menu-item" onclick="openLink('xiuxue.html')">休 学></div>
+                <div class="menu-item" onclick="openLink('miaoxing.html')">喵 星></div>
+            </div>
+        </div>
+        <div class="content">
+            <iframe id="content-frame" src="chushiyemian.html" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+<script>
+    function openLink(url) {
+        document.getElementById('content-frame').src = url;
+    }
+</script>
+
+</html>

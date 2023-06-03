@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯色</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            height: 5px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 320px;
+            height: 320px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 300px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="csbaizhou.jpg" alt="baizhou">
+            <div class="text">白粥<br>性别：公 已绝育<br><br>从隔壁学校跑来的小白猫，非常亲人可爱，目前已经在学校定居，喜欢在图书馆大道上等候同学们，看来又是一只爱学习的猫猫。不定期跟着大黑、小黑、壮姐一起生活 </div>
+        </div>
+        <div class="item">
+            <img src="csmeiqiu.jpg" alt="meiqiu">
+            <div class="text">煤球 <br> 性别：公 已绝育<br><br>从隔壁工程大来的交换生，很快就适应了600弄的生活，是一个柔柔弱弱的小男生。跟丑橘关系比较近 </div>
+        </div>
+        <div class="item">
+            <img src="csxiaohei.jpg" alt="xaiohei">
+            <div class="text">小黑 <br>性别：未知 未绝育<br><br>是小黑不是大黑，暂时还不清楚小黑跟大黑是什么关系，不过作为跟大黑在学校一起混的兄弟，要努力跟大黑学习生活技能。</div>
+        </div>
+        <div class="item">
+            <img src="csmiemie.jpg" alt="miemie">
+            <div class="text">咩咩 <br>性别：母 已绝育<br><br>神出鬼没的美女咩咩，生了一窝奶牛猫在隔壁，最近似乎是想过子宫保养后的平静生活，频频来蹭饭并小住，黑豆喜欢贴贴的对象之一，似乎是致使小黑豆情窦初开的女神。。
+            </div>
+        </div>
+        <div class="item">
+            <img src="csguoqing.jpg" alt="guoqing">
+            <div class="text">国庆<br>性别：公 已绝育<br><br> 蓝白和橘二的孩子，继承了蓝白的颜值和橘二的温柔，是一只很乖的小猫。爸爸是蓝白，妈妈是橘二，目前跟火锅、淮南一起玩</div>
+        </div>
+        <div class="item">
+            <img src="cshanlu.jpg" alt="hanlu">
+            <div class="text">寒露<br>性别：母 已绝育 <br><br>吃东西时可以摸一下，全身雪白，可爱的小妹妹，与重阳、鸡块同是橘三的孩子</div>
+        </div>
+        <div class="item">
+            <img src="csdahei.jpg" alt="dahei">
+            <div class="text">大黑<br>性别：公 已绝育 <br><br>流水的猫咪，铁打的大黑，当你觉得你当初瞥见的猫咪突然不见了，草从里一大抹黑影却像永远不会消失，两只绿眼睛仔细打量你是否会掏出一些美味的食物.....</div>
+        </div>
+
+        <div class="item">
+            <img src="cslanbai.jpg" alt="lanbai">
+            <div class="text">蓝白 <br>性别：公 已绝育<br><br>白猫中胆子最小，最像弟弟的一只，和小泥关系最好，总是被怕怕欺负和怕怕吵架，也怕呜呜，怕怕呜呜这两只坏猫咪还总是抢蓝白的好吃的吃。蓝白最近神出鬼没的，经常去电动车那里蹭饭。</div>
+        </div>
+        <div class="item">
+            <img src="csxiaoxiaobai.jpg" alt="xiaoxiaobai">
+            <div class="text">小小白 <br>性别：公 已绝育<br><br>杂乱的毛色和常年发黑的鼻头，让小小白这纯白色的猫咪显得有些不堪，如果说猫有性格的话，小小白更像是无问世俗的隐者，饿了，随便去垃圾站翻翻，饱了，寻一尺阳光，静静独享。</div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

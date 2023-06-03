@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕业</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 280px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 260px;
+            height: 1px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 300px;
+            height: 300px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 290px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="byhuoguo.jpg" alt="huoguo">
+            <div class="text">火锅<br>性别：母 未绝育 已送养<br><br>瞳孔异色，除了头顶一小撮黑毛通体雪白，很怕人就算吃东西的时候也摸不到，和淮南同是橘二的孩子，现在与麦麦姐姐待在一起哟。
+            </div>
+        </div>
+        <div class="item">
+            <img src="byweibojv.jpg" alt="weibojv">
+            <div class="text">围脖橘 <br>性别：公 已绝育 已送养<br><br>很亲人，给撸给抱给亲亲的好猫，被心仪已久的两脚兽抱回家过幸福生活啦。和奥利奥关系很好。</div>
+        </div>
+        <div class="item">
+            <img src="byali.jpg" alt="al">
+            <div class="text">阿狸<br>性别：母 已绝育
+                已送养<br><br>阿狸更像一只小精灵，为枯燥的上学之路或取快递死气沉沉的队伍添了丝生气。凭借完美性格和外貌获得长期饭票的同时，也令三期男猫们魂牵梦绕~是震哥的乖女儿。</div>
+        </div>
+        <div class="item">
+            <img src="byxiaolong.jpg" alt="xiaolong">
+            <div class="text">小泷 <br> 性别：母 已绝育 已送养<br><br>亲人活泼的狸花，喜欢和人玩狩猎游戏。不争不抢对周围的
+                猫猫都很友好，心情好的时候会一直蹭你，叫声超级奶很短促，喜欢吃鸡肉冻干和生骨肉饼，比吐司亲人，比咪咪壮实。好朋友是蓝白。 </div>
+        </div>
+        <div class="item">
+            <img src="bymige.jpg" alt="mige">
+            <div class="text">咪哥<br>性别：公 已绝育 已送养<br><br> 获得了长期饭票的亲人小咪，给亲给撸给抱抱，因为一个对毯子做出不好的事情视频被大家熟知，最近和富贵妈相处的不错。 </div>
+        </div>
+        <div class="item">
+            <img src="byharengjv.jpg" alt="harengjv">
+            <div class="text">哈人橘<br>性别：公 未绝育
+                已送养<br><br>年龄小小，脾气到不小，虎头虎脑没心没肺的，两个兄弟被送走的时候还在猫包里美滋滋吃猫条，被大家庭收养，虽然没有壮姐的关爱但收获了干猫妈的陪伴和教育。</div>
+        </div>
+        <div class="item">
+            <img src="bydasongshu.jpg" alt="dasongshu">
+            <div class="text">大松鼠<br>性别：公 已绝育 已送养<br><br>不知道是弃养还是流浪来的长毛狸花，在宿舍区发现不久就被抓去绝育后被领养了。</div>
+        </div>
+        <div class="item">
+            <img src="byxiaoqi.jpg" alt="xiaoqi">
+            <div class="text">小起 <br>性别：公 已绝育 已送养<br><br>被遗弃的三小只之一，最调皮吃的最多的就是他，上蹿下跳带着小浣熊。</div>
+        </div>
+        <div class="item">
+            <img src="byxiaowanxiong.jpg" alt="xiaowanxiong">
+            <div class="text">小浣熊 <br>性别：公 已绝育 已送养<br><br>很亲人，给撸给抱给亲亲的好猫，被心仪已久的两脚兽抱回家过幸福生活啦。和奥利奥关系很好。</div>
+        </div>
+    </div>
+</body>
+
+</html>

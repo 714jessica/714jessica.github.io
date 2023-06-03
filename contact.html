@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>联系我们</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(img32.png);
+            /* background-color: rgb(217, 200, 198); */
+            background-size: 100% 100%;
+
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(img3.png);
+            background-repeat: repeat-x;
+            background-size: 100% 100%;
+        }
+
+        .box1 {
+            position: absolute;
+            width: 62%;
+            height: 65%;
+            background-color: rgba(227, 227, 162, 0.488);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            position: absolute;
+            width: 36%;
+            height: 40%;
+            background-color: rgba(222, 194, 140, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-map {
+            /* top: 25%;
+            left: 25%; */
+            z-index: 2;
+            top: 28%;
+            left: 10%;
+            background-image: url(img36.png);
+            opacity: 87%;
+            background-repeat: repeat-x;
+            background-size: 100% 100%;
+            border: solid #ca6f6f 2.5px;
+        }
+
+        .box-info {
+            /* top: 50%;
+            left: 50%; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+        }
+
+        .wenzi {
+            /* font-family: 华文行楷; */
+            position: absolute;
+            top:18%;
+            left:53%;
+            font-size: 25px;
+            /* font-weight: 100px; */
+            color: rgb(17, 17, 16);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-map">
+        </div>
+        <div class="box1 box-info">
+            <div class="wenzi">
+                <br><br>
+                <p>联系方式</p>
+                <li>电话：13519034510</li>
+                <li>微信：wxid_dgh124374756</li>
+                <li>邮箱：2431721434@qq.com</li>
+                <li>地址：上海松江区文汇路600弄</li>
+                <li>邮编：201620</li>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
