@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三花&玳瑁</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            /* height: 5px; */
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 320px;
+            height: 320px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 300px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="tianmei.jpg" alt="tianmei">
+            <div class="text">甜妹 <br>性别：母 已绝育<br><br>甜妹经常在呜鸣的带领下，和拽哥、小重阳在移动门进口处靠完美的颜值和超优秀的猫德进行一整个讨饭的大动作。</div>
+        </div>
+        <div class="item">
+            <img src="hualao.jpg" alt="haulao">
+            <div class="text">话痨 <br> 性别：母
+                已绝育<br><br>一手奶大黑豆，外表看起来很狡黠其实是很蠢萌的小猪咪呢，吃猫条的时候可以撸撸，但亲人的时候会疯狂嗲叫着蹭你，很勇猛，曾在车棚顶上大战隔壁入侵的大公猫。 </div>
+        </div>
+        <div class="item">
+            <img src="gougou.jpg" alt="gougou">
+            <div class="text">狗狗<br>性别：母 已绝育<br><br> 圆溜溜大小眼的可爱三花，软腻腻的，原来叫花姐给亲给撸可以小小抱一下，猴猴的塑料闺蜜
+                (为了吃鸡肉冻干对猴猴动手)每天除了吃就是睡在草坪里。逗猫棒终结猫。</div>
+        </div>
+        <div class="item">
+            <img src="chandouma.jpg" alt="chandouma">
+            <div class="text">馋豆妈<br>性别：母 已绝育 <br><br>
+                小馋豆的妈妈，自从孩子被领养，做完子宫保养回来后开始奶小富贵，富贵妈的妹妹，但性格完全相反，不抓人可以手持喂猫条，但不能摸。小富贵的贴心小姨，忍受着它的坏毛病，还一直不争不抢让孩子们先吃。</div>
+        </div>
+        <div class="item">
+            <img src="niuniu.jpg" alt="niuniu">
+            <div class="text">牛牛<br>性别：母 已绝育
+                <br><br>玳瑁猫中体型最瘦小的一个，和猪猪、吐司是好姐妹三猫组，三只猫整天一起吃饭一起睡觉。牛牛脸上独特的花色使她看起来很凶，但其实是一个很奶的需要关爱的猫妹妹，有口炎，不挑食。</div>
+        </div>
+        <div class="item">
+            <img src="zhuangjie.jpg" alt="zhuangjie">
+            <div class="text">壮姐 <br>性别：母 已绝育<br><br>与大黑一起是铁打讨饭组合，心情好的时候会在你腿边蹭来蹭去，体型看起来很壮实但去做子宫保养的时候的飞檐走壁大显身手，也是猫中豪杰了。
+            </div>
+        </div>
+        <div class="item">
+            <img src="moka.jpg" alt="moka">
+            <div class="text">摩卡 <br>性别：母
+                已绝育<br><br>独自美丽的摩卡夫人，有四个猫崽，已经三个多月了，目前已接受子宫保养，伟大的猫妈妈，有吃的总是让孩子先吃然后自己最后吃，不过幸运的是以后就可以做独立单身母猫啦。 </div>
+        </div>
+        <div class="item">
+            <img src="xiaojingzhang.jpg" alt="xiaojingzhang">
+            <div class="text">小警长 <br>性别：母 已绝育<br><br>妈宝永远是妈妈身后的小尾巴，形影不离。身材瘦瘦的，和妈妈抢饭的时候身手敏捷。</div>
+        </div>
+        <div class="item">
+            <img src="fuguima.jpg" alt="fuguima">
+            <div class="text">富贵妈<br>性别：母 已绝育<br><br>小富贵的亲妈，馋豆妈的好姐姐，把小富贵给妹妹豆妈带，自己做起了单身独立魅力女猫，开启了和咪哥的快乐同居生活
+                (不是，绝育回来后亲人了许多，会靠近两脚兽吃饭啦。 </div>
+        </div>
+    </div>
+</body>
+
+</html>

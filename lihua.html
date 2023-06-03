@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狸花</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            height: 1px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 310px;
+            height: 310px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 290px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="lhyizuomao.jpg" alt="yizuomao">
+            <div class="text">一撮毛<br>性别：公
+                已绝育<br><br>摩卡夫人孩子里最亲人的一只，胆子挺大，现在可以趁吃饭的时候撸撸，有坏习惯就是会出爪，动作很快。性格活泼，上蹿下跳的爬树、坐电动车。小刘海像是被tony剪坏了。 </div>
+        </div>
+        <div class="item">
+            <img src="lhmimi.jpg" alt="mimi">
+            <div class="text">咪咪 <br> 性别：母
+                已绝育<br><br>很嗲很亲人的小狸花，和电动车关系最好，中午太阳最大的时候会去找电动车一起晒太阳，也有口炎。可能因为嘴巴疼不喜欢吃零食罐头，见到猫条会躲着向后跑感觉很害怕猫条?最喜欢被两脚兽拍屁屁，因此获得了长期专属拍屁工。
+            </div>
+        </div>
+        <div class="item">
+            <img src="lhtusi.jpg" alt="tusi">
+            <div class="text">吐司<br>性别：母 已绝育<br><br>
+                因为小龙的发胖，咪咪的亲人，吐司略微凶悍的表情和特立独行就显得她很独特，她不会粘着你问你讨食，她只是静静的站在正在撒娇的牛牛和猪猪后面等你倒上一碗猫粮，在猪猪和生牛继续撒娇要零食的时候她已经默默吃起来了。
+            </div>
+        </div>
+        <div class="item">
+            <img src="lhjingzhangma.jpg" alt="jingzhangma">
+            <div class="text">警长妈<br>性别：母 已绝育 <br><br>不亲人，身手敏捷，教孩子们爬树爬车棚顶，不怎么叫，唯一的讨食技能就是蹲着直勾勾的盯着你，经常和闲逛的富贵妈吵起来。</div>
+        </div>
+        <div class="item">
+            <img src="lhkaotusi.jpg" alt="kaotusi">
+            <div class="text">烤吐司<br>性别：未知 未知<br><br>跟虫族好像是异父异母的亲兄弟 (姐妹) ? 非常神秘的一只猫猫。狗狗的求爱者。</div>
+        </div>
+        <div class="item">
+            <img src="lhtiaotiaohu.jpg" alt="tiaotiaohu">
+            <div class="text">跳跳虎 <br>性别：公 已绝育<br><br>闪现出现在图书馆的跳跳虎，因为喜欢往两脚兽身上跳而得名，因为热情营业，很快便赢得了同学们的喜爱，目前已经成为全校最胖的猫。
+            </div>
+        </div>
+        <div class="item">
+            <img src="lhzhuaige.jpg" alt="zhuaige">
+            <div class="text">拽哥 <br>性别：公 已绝育<br><br>胆子很小，个头也很mini的可爱小狸花，像个宝宝一样~与甜妹、重阳、鸡块都是呜呜男奶爸带领下的讨饭好搭子们~</div>
+        </div>
+        <div class="item">
+            <img src="lhdalian.jpg" alt="dalian">
+            <div class="text">大脸 <br>性别：未知 未知<br><br>怕人安全距离1m以外<br> 外貌脸盘子超大，我叫它大脸妹<br> 貌似也是隔壁工技大这学期来的交换生一枚</div>
+        </div>
+        <div class="item">
+            <img src="lhxiaomei.jpg" alt="xiaomei">
+            <div class="text">小梅 <br>性别：未知 未知<br><br>活跃于学思楼后面的的漂亮小梅狸，花色很好看，四肢细长，体型瘦小，比较怕人。似乎是独来独往的一个独立小朋友</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>六百弄喵窝</title>
+</head>
+<style>
+    /* Set the background color of the body */
+    body {
+        background-color: #F8EEE7;
+    }
+
+    /* Style the header */
+    header {
+        background-color: #333;
+        color: #F8EEE7;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Style the navigation menu */
+    nav {
+        background-color: #bda0b2;
+        color: #F8EEE7;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #ddd;
+        color: #333;
+        box-shadow: 0 0 10px white;
+        border-radius: 5px;
+    }
+
+    main {
+        background-color: #F8EEE7;
+        color: #333;
+        padding: 10px;
+    }
+    .footer { 
+        background-color: #333;
+        color: #F8EEE7;
+        padding: 10px;
+        text-align: center;
+    }
+    #content {
+        width: 1300px;
+        height: 700px;
+        background-color: bisque;
+        /* border: 3px solid #e3c4c4; */
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+
+    #inner {
+        background-color: aquamarine;
+        width: 5200px;
+        height: 700px;
+        z-index: 1;
+        left: 0px;
+        position: absolute;
+    }
+
+    #inner img {
+        float: left;
+        width: 1300px;
+        height: 700px;
+    }
+
+    #buttons {
+        position: absolute;
+        left: 645px;
+        bottom: 20px;
+        z-index: 2;
+        height: 10px;
+        width: 100px;
+    }
+
+    #buttons button {
+        float: left;
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fdf8f8;
+        background: #333;
+        border-radius: 50%;
+        cursor: pointer;
+        /* 设定网页浏览时用户鼠标指针的样式,也就是鼠标的图形形状  */
+    }
+
+    #buttons .on {
+        background: #fa1818;
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 2;
+        top: 330px;
+        display: none;
+        width: 40px;
+        height: 40px;
+        color: #fdf8f8;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 37px;
+        line-height: 39px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .arrow:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #content:hover .arrow {
+        display: block;
+    }
+
+    #prev {
+        left: 20px;
+        text-decoration: none;
+    }
+
+    #next {
+        right: 20px;
+        text-decoration: none;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 100%;
+        /* background-color: rgb(52, 52, 50); */
+        background-image: url(img35.png);
+        transition: top 0.7s cubic-bezier(0.5, 0, 0.2, 1) 0s;
+        overflow-y: scroll;
+        z-index: 4;
+        font-family: Arial, sans-serif;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+    }
+    .cont{
+        width:75%;
+        margin: auto;
+    }
+
+    /* .box2>div {
+        height: 200px;
+        background-color: aqua;
+        margin-top: 20px;
+    }  */
+
+
+    h2 {
+            background-color: #DF744A;
+            color: #f4f4ef;
+            padding: 30px;
+            box-shadow: 10px 10px 5px #747171;
+            border-radius: 5px;
+            /* color: #f0f8f8; */
+            text-align: center;
+        }
+
+
+        p {
+            color: #111010;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        a {
+            color: #008080;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+</style>
+
+<body>
+    <header>
+        <h1>欢迎光临六百弄喵窝！</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index1.html">猫咪科普</a></li>
+            <li><a href="Education.html">猫咪档案</a></li>
+            <li><a href="Travelling1.html">猫咪活动</a></li>
+            <li><a href="Learn more.html">猫咪周边</a></li>
+            <li><a href="form1.html">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <div id="content">
+            <div id="inner">
+                <img src="img31.png" alt="">
+                <img src="img32.png" alt="">
+                <img src="img33.png" alt="">
+                <img src="img34.png" alt="">
+            </div>
+            <div id="buttons">
+                <button class="on"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        </div>
+    </body>
+    <div class="box2">
+        <div class="cont">
+            <h2>关 于 我 们</h2><br>
+            <p>The significance of travel is that it allows me to misunderstand life, in which we are all passers-by without
+                responsibility, relaxed bystanders, and foreigners full of expectation.</p>
+            <p>Every trip will become a memory that accompany me for the rest of my life, a permanent treasure, and what
+                travel brings me is the romance that everyone envies. Nothing can stop the yearning for freedom. We're all
+                on the road, we're all exploring, we're moving forward together.</p><br>
+            <p>旅游的意义就在于，它允许我错误地理解生活，在这种生活里，我们都是毋需承担的过客，是心情轻松的旁观者，是满心期待的异乡人。</p>
+            <p>每一次的旅行都将成为伴随我一生的记忆，成为永久的财富，旅游使我拥有的，是所有人艳羡的浪漫。没有什么能够阻挡对自由的向往。我们都在路上，我们都在探索，我们一起前进。</p><br>
+            <p>In the past twenty years, almost every summer vacation I have traveled to a place I was interested in at that
+                time, feeling different terrain and landforms, experiencing different cultural scenery. Here are some
+                beautiful silhouettes of the cities that impressed me the most~</p>
+            </div>
+    </div>
+    <main>
+        <footer>
+            <p>&copy; 六百弄喵窝</p>
+        </footer>
+    </main>
+
+        <!-- 滑图自动播放 -->
+        <script>
+            let width = 1300;
+            let list = document.getElementById("inner");
+            let prev = document.getElementById("prev");
+            let next = document.getElementById("next");
+            let butt = document.querySelectorAll("button")
+            let num = list.children.length; // get img number
+            function animate(offset) {
+                let left = parseInt(getComputedStyle(list).left);
+                let newLeft = left - offset * width;
+                list.style.left = newLeft + "px";
+                if (newLeft <= -num * width) {
+                    list.style.left = "0px";
+                }
+                if (newLeft > 0) {
+                    list.style.left = -(num - 1) * width + "px";
+                }
+            }
+            function seton() {
+                let left = parseInt(getComputedStyle(list).left);
+                for (let i = 0; i < butt.length; i++) {
+                    if (left === -(i * 1300)) {
+                        for (let j = 0; j < butt.length; j++) {
+                            if (j == i)
+                                butt[i].className = "on";
+                            else
+                                butt[j].className = " ";
+                        }
+                        break;
+                    }
+                }
+            }
+            //点击下面的按钮换图片
+            for (let i = 0; i < butt.length; i++) {
+                butt[i].onclick = function () {
+                    for (let j = 0; j < butt.length; j++) {
+                        if (j == i)
+                            butt[i].className = "on";
+                        else
+                            butt[j].className = " ";
+                    }
+                    let left = parseInt(getComputedStyle(list).left);
+                    list.style.left = 0 + "px";
+                    animate(i);
+                }
+            }
+            prev.onclick = function () {
+                animate(-1);
+                seton();
+            };
+            next.onclick = function () {
+                animate(1);
+                seton();
+            };
+            //每隔一段时间自动换图片
+            var currentImage = 1;
+            var totalImages = 4;
+            var intervalTime = 3000;
+            setInterval(function () {
+                currentImage++;
+                if (currentImage > totalImages) {
+                    currentImage = 1;
+                }
+                animate(1);
+                seton();
+            }, intervalTime);
+
+            <!-- 上滑切换页面 -->
+            function scrollFunc(e) {
+                // 滑轮位置
+                let scop = document.getElementsByClassName("box2")[0].scrollTop;
+                e = e || window.event;
+
+                // 到达切换边界
+                if (scop === 0) {
+
+                    if (e.wheelDelta) { //IE/Opera/Chrome/Safari
+                        if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                            document.getElementsByClassName("box2")[0].style.top = "100%";
+                        }
+                        if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                            document.getElementsByClassName("box2")[0].style.top = "0";
+                        }
+                    } else if (e.detail) {  //Firefox滑轮事件
+                        if (e.detail < 0) { //当滑轮向上滚动时
+                            document.getElementsByClassName("box2")[0].style.top = "100%";
+                        }
+                        if (e.detail > 0) { //当滑轮向下滚动时
+                            document.getElementsByClassName("box2")[0].style.top = "0";
+                        }
+                    }
+
+                    scop = 0;
+                }
+
+            }
+
+            /* Firefox */
+            if (document.addEventListener) {
+                document.addEventListener('DOMMouseScroll', scrollFunc, false);
+            }//W3C  
+            window.onmousewheel = document.onmousewheel = scrollFunc; //IE/Opera/Chrome/Safari
+        </script>
+</body>
+
+</html>

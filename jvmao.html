@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橘猫&橘白</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            height: 5px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 320px;
+            height: 320px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 300px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="jmwenroujv.jpg" alt="wenroujv">
+            <div class="text">温柔橘 <br>性别：公 已绝育<br><br>不确定是不是摩卡夫人的孩子，因为体型上在其他几只小的时候已经很大了，很温顺的小橘，不亲人，但可以靠近投喂。</div>
+        </div>
+        <div class="item">
+            <img src="jmjvzuo.jpg" alt="jmjvzuo">
+            <div class="text">橘座<br>性别：公
+                已绝育<br><br>可以说是宿舍区最有喜感的猫咪了，因为长年坐在电动车上等两脚兽投喂而获名，如果你在宿舍区撸不到小猫咪，去找电动车和咪咪，他们不会让你失望，自从电动车获得了了两脚兽长期饭票就日渐圆润起来，每天晒晒太阳、吃吃饭、坐坐电动车、小日子过得很滋润。
+            </div>
+        </div>
+        <div class="item">
+            <img src="jmxiaofugui.jpg" alt="xiaofugui">
+            <div class="text">小富贵 <br> 性别：公
+                已绝育<br><br>上外贸拳王，身价上千，一拳七百。出拳速度快，首先会用喵喵叫迷惑你，其次使出必杀技清纯的小尖脸诱食，等你靠近的时候给你一拳。别靠近，会变得不幸。 </div>
+        </div>
+        <div class="item">
+            <img src="jmfuguidie.jpg" alt="fuguidie">
+            <div class="text">富贵爹<br>性别：公 未绝育<br><br> 力气挺大的大公猫，至今没绝育，抓捕失败还欠六佰个抄网，折尾(不清楚什么时候折的)，每天神出鬼没，和吐司它们亲近一些。</div>
+        </div>
+        <div class="item">
+            <img src="jmwuwu.jpg" alt="wuwu">
+            <div class="text">呜呜<br>性别：公 已绝育
+                <br><br>发福男妈妈+1，因为喜欢叫且叫声很特别，获得了更多的关注。带大了三橘子后，独自隐居在草从中，偶尔会和怕怕一起在草丛里睡觉，两分钟不吃饭就饿了。两只猫也会为了一根猫薄荷棒大打出手。</div>
+        </div>
+        <div class="item">
+            <img src="jmhuainan.jpg" alt="huainan">
+            <div class="text">淮南<br>性别：公 未绝育 <br><br>白色大脖领，贪吃橘+1。孩子有个怪习惯，喜欢殴打冻干再把冻干吃掉。是橘二的孩子、跟火锅关系好。</div>
+        </div>
+        <div class="item">
+            <img src="jmerlangsheng.jpg" alt="erlangsheng">
+            <div class="text">二郎神 <br>性别：公 已绝育<br><br>工程大来的交换生之,虽然是隔壁搬家来的小猫，蹭吃蹭喝绝不客气，因为额头上有块白得名二郎神。很能吃，看到人靠近会大叫着跑开。
+            </div>
+        </div>
+        <div class="item">
+            <img src="jmjver.jpg" alt="jver">
+            <div class="text">橘二 <br>性别：母 未绝育<br><br>呜呜和怕怕养大的三只小橘中的中橘，还没接受子宫or蛋蛋保养。和橘大、橘三是一窝，长大后还是喜欢跟呜呜待在起 </div>
+        </div>
+        <div class="item">
+            <img src="jmbanban.jpg" alt=banabn">
+            <div class="text">斑斑 <br>性别：母 已绝育<br><br>隔壁来蹭饭且有定居趋势的猫猫，是圆脸橘的妹妹成为了阿狸的日常玩伴+饭友之一。心情好的时候勉强可以摸一下。</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

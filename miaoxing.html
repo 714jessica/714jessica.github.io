@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喵星</title>
+    <style>
+        body {
+            background-image: url('初始页面背景.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            height: 1px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 310px;
+            height: 310px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 290px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="xxnainiu.jpg" alt='111'>
+            <div class="text">奶牛<br>性别：母 已绝育 失踪 <br><br>奶牛于2020年1月于89车库失踪，如果有她任何消息的朋友可以联系我们suibecats@163.com，我们想知道她是否安好。
+            </div>
+        </div>
+        <div class="item">
+            <img src="xxahuanghuang.jpg" alt='111'>
+            <div class="text">阿黄黄 <br> 性别：公 已绝育
+                失踪<br><br>阳光下的阿黄黄就是完美的橘猫。叫声嗲嗲的。但患了恶病质后开始暴瘦，在医院治疗大半年后恢复放归，开始变的亲人了。2020年12月后不知道去哪里讨生活了。</div>
+        </div>
+        <div class="item">
+            <img src="xxsanhuami.jpg" alt='111'>
+            <div class="text">三花咪<br>性别：母 已绝育 失踪 <br><br>风靡三期的漂亮女猫。绝育前貌美如花，引来无数男喵为其倾倒。绝育后虽有发福，但风韵犹存，仍旧是男喵心中的女神。</div>
+        </div>
+        <div class="item">
+            <img src="xxxiaosanhua.jpg" alt='111'>
+            <div class="text">小三花<br>性别：母 已绝育 失踪 <br><br>大咪的不知道第几任老婆，是个可爱的小美女，叫声嗲嗲的小馋猫，睡觉还会吐舌头，不知道梦里有什么好吃的呢^人</div>
+        </div>
+        <div class="item">
+            <img src="xxrousong.jpg" alt='111'>
+            <div class="text">肉松<br>性别：公 已绝育 失踪
+                <br><br>上外贸为数不多的长毛猫之一，可亲可撸，因外表俊秀，当选猫届校草，从此过上了众妹妹投喂的幸福生活，性格也很好，谁到他那儿都能蹭上一口饭，妥妥的猫德学院模范猫代表。</div>
+        </div>
+        <div class="item">
+            <img src="xxahua.jpg" alt='111'>
+            <div class="text">阿花<br>性别：母 已绝育 失踪
+                <br><br>当之无愧的校花，毕竟没有哪只猫的靓照可以永远挂在学校官方公众号上，生下一窝五只崽很不容易，非常亲人，也许是被垂暮以久的两脚兽带走啦，樱花树下的阿花定格在大家的脑海里，希望她于一处安居过的平和快乐。
+            </div>
+        </div>
+        <div class="item">
+            <img src="xxjuanwang.jpg" alt='111'>
+            <div class="text">卷王<br>性别：公 已绝育 失踪
+                <br><br>这就是卷王，哪怕是冬天找个暖和地方，也要进图书馆跟大家一!起!学!习!期末考试，卷王给了我一个理由让我爱你。小道消息现在貌似转学去华政读法去了</div>
+        </div>
+        <div class="item">
+            <img src="xxjvsan.jpg" alt='111'>
+            <div class="text">橘三<br>性别：母 未绝育 失踪 <br><br>呜呜和怕怕养大的三只小橘中体型最小的小橘子，叫声很奶，经常被另外两个欺负。目前不知道被哪个公猫祸害了，已经产下了三个小宝宝。
+            </div>
+        </div>
+        <div class="item">
+            <img src="xxheidou.jpg" alt='111'>
+            <div class="text">黑豆<br>性别：公 已绝育 失踪 <br><br>傻里傻气的黑豆，饮食规律，性格温顺，是话痨的淘气千儿子，是小小白的贴心大哥哥，不护食，给啥吃啥。</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

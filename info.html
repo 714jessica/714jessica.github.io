@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猫咪知识</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      background-color: rgb(233, 235, 185);
+      background-repeat: repeat-x;
+      background-size: 100% 100%;
+      font-family: 微软雅黑;
+      font-size: smaller;
+    }
+
+    .navigate {
+      display: flex;
+      background-color: rgb(201, 171, 133);
+      height: 45px;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      /* sets the background color to dark yellow */
+    }
+
+    .nav-box {
+      font-size: larger;
+      flex: 1;
+      font-family: fantasy;
+      text-align: center;
+      padding: 10px;
+      color: #000;
+    }
+
+    .tup {
+      background-color: aqua;
+      width: 83%;
+      margin: 0 auto;
+      height: 450px;
+      background-repeat: repeat-x;
+      background-image: url(img38.jpg);
+      background-size: 100% 100%;
+    }
+
+    .tup1 {
+      background-image: url(img40.png);
+      width: 50%;
+      background-repeat: repeat-x;
+      border-radius: 5px;
+      background-size: 100% 80%;
+      margin-top: 100px;
+    }
+
+    .weishi,
+    .jibing,
+    .jueyu,
+    .lumao {
+      width: 70%;
+      margin-left: 50px;
+    }
+
+    .tup2 {
+      background-image: url(img39.png);
+      border-radius: 5px;
+      width: 50%;
+      background-repeat: repeat-x;
+      background-size: 100% 80%;
+      margin-top: 130px;
+    }
+
+    .tup3 {
+      background-image: url(img41.png);
+      border-radius: 5px;
+      width: 50%;
+      height: 200px;
+      background-repeat: repeat-x;
+      background-size: 100% 100%;
+      margin-top: 18px;
+    }
+
+    .tup4 {
+      background-image: url(img42.png);
+      border-radius: 5px;
+      width: 50%;
+      background-repeat: repeat-x;
+      background-size: 100% 100%;
+      margin-top: 5px;
+    }
+
+    .box {
+      width: 80%;
+      height: auto;
+      padding: 20px;
+      background-color: rgba(250, 235, 215, 0.5);
+      ;
+      margin: 0 auto;
+      border: 1px solid black;
+      display: flex;
+      border: 2px dashed rgb(188, 179, 179);
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      color: rgb(244, 245, 247)
+    }
+
+    .footer {
+      background-color: rgb(201, 171, 133);
+      font-size: larger;
+      text-align: center;
+      width: 100%;
+    }
+
+    #datetime-box {
+      font-size: 20px;
+      margin-top: -3px;
+      border: 2px solid #5c5f3a;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigate">
+      <div class="nav-box" id="datetime-box"></div>
+      <div class="nav-box"><a href="#weishititle">喂食</a></div>
+      <div class="nav-box"><a href="#jibingtitle">疾病</a></div>
+      <div class="nav-box"><a href="#jueyuetitle">绝育</a></div>
+      <div class="nav-box"><a href="#lumaotitle">撸猫</a></div>
+    </div>
+    <div class="tup">
+
+    </div>
+    <div class="box" id="feeding">
+      <div class="tup1"></div>
+      <div class="weishi">
+        <h1 id="weishititle">喂食</h1>
+        <h2>禁止投喂：</h2>
+        <p>人类食物，!牛奶及其乳制品、巧克力、麻辣烫、炸鸡、火腿肠等 (请同学们不要把湿垃圾放在猫盆旁，猫咪误食后会有很严重的后果)</p>
+        <h2>正确喂食：</h2>
+        <ol>
+          <li>正规猫粮</li>
+          <p>请不要购买凯瑞斯、力狼、伟嘉以及淘宝上50块钱20斤花花绿绿的猫粮，这些都是大名鼎鼎毒粮</p>
+          <li>罐头推荐主食罐</li>
+          <p>零食罐内含有大量诱食剂，对猫猫的口腔健康很不好。</p>
+          <li>冻干类</li>
+          <p>请选择正规厂家生产，一些小作坊由于生产环境不达标，会导致冻千有害无益.</p>
+        </ol>
+        <h2>注意事项：</h2>
+        <ol>
+          <p>1、不要在马路上、人群较为集中点喂猫。一期的同学也不要将猫咪带至一楼大厅内进行喂食;</p>
+          <p>
+            2、注意地面卫生，宿舍区大部分花坛处放置有猫碗、猫食盆，同学们最好将食物放置于猫碗内。如果附近没有食盆又被小猫碰瓷，尽量将猫粮放置在附近的草丛或者台阶上。不要将猫粮零散的撒到地上。有能力的同学可以放置一张纸垫在猫粮上，也可以网上购买一些一次性餐盒;
+          </p>
+          <p>3、猫咪吃饭时尽量不要触碰猫咪。不然猫咪会以为你在和他抢食物噢</p>
+          <p>4、尽量不要用手直接喂猫咪，小心抓伤!</p>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="box" id="diseases">
+      <div class="tup2"></div>
+      <div class="jibing">
+        <h1 id="jibingtitle">疾病</h1>
+        <h2>口炎</h2>
+        <p>通常指代那些病变范围广泛、反复发作的口腔炎症病变。口炎会导致患猫进食困难、精神状态改变、体重减轻，严重时十分影响猫咪的生活质量。</p>
+        <p>口炎的病因较为复杂，牙结石、病毒 (比如杯状病毒、猫瘟病毒、白血病病毒、猫艾滋病毒等) 、细菌、免疫低下，都可能导致口炎，主要表现有流口水，口腔溃疡，厌食。</p>
+        <h2>猫瘟(FPV)</h2>
+        <p>猫瘟疫病毒 (FPV) 会感染所有猫科动物，甚至浣熊、狐狸与貂。猫瘟病毒存活力极强，环境中可以存活数月。常见洗涤、消毒产品对其无可奈何。</p>
+        <p>症状包括: 呕吐、腹泻、淋巴细胞减少、中性粒细胞减少血小板减少与贫血紧随其后。</p>
+        <h2>感冒</h2>
+        <p>较轻时症状有打喷嚏，咳嗽，眼角堆积眼屎等，这时可通过喂食阿莫西林治疗，成猫一天半颗，幼猫可减为1/4颗。若为很小的奶猫，或症状发展出发烧、食欲不振、口腔溃疡、眼底充血应及时送医。</p>
+        <h2>眼睛发炎</h2>
+        <p>相关疾病 (如鼻支)、进灰、撞到或者挠到等原因都有可能导致眼睛发炎。症状为流眼泪.出现奇怪的眼屎、忽然大小眼/红肿、出现白翳。</p>
+        <h2>猫藓</h2>
+        <p>症状为浑身癌痒，经常蹭各种东西，在腹部背部、头后部、颈部等区域出现圆形或圆形的痰</p>
+        <p>猫癣可传染人，应避免和患有猫癣的猫直接接触，并勤洗手。对于寄养中的猫，如果情况不太严重，应在食物中加入维生素B2，让猫晒太阳，人勤洗手:如果较为严重，需要遵医嘱使用外用药.</p>
+        <h2>外伤</h2>
+        <p>猫咪有时由于互相打斗，跌伤等情况，会出现小的穿刺型创口，这些小伤不需要送医院治疗，可使用可鲁喷在伤口上防止发炎和感染即可缓慢自愈。而当外伤遇到生命危险时应及时送医。</p>
+      </div>
+    </div>
+
+
+    <div class="box" id="neutering">
+      <div class="tup3"></div>
+      <div class="jueyu">
+        <h1 id="jueyuetitle">绝育</h1>
+        <p>绝育后的流浪猫攻击性一般会下降，且不再有长时间的叫春等行为。也在一定程度上调和了人与猫的矛盾。</p>
+        <p>有研究表明，不绝育的流浪猫平均寿命不足
+          3年，而绝育的流浪猫平均寿命则大幅上升。造成这种差别的原因有很多。其中一个就是流浪猫生存环境恶劣，母猫难产、幼猫早天发生概率很高，拉低了平均寿命。另一个原因在于过度交配、生育会大幅增加猫的生殖系统病变的概率，从而导致死亡
+        </p>
+        <p>
+          一只家猫的寿命基本稳定在13~18年之间，平均15年。根据首都爱护动物协会(CAWA)2007年发布的《北京市流浪猫生存状况的调查报告》中显示，未绝育的流浪猫的平均寿命仅有3年，死因多为意外、疾病难产等。已绝育的流浪猫寿命尚无明确文献支持，根据校园内实际记录，一般能达到10年左右。
+        </p>
+      </div>
+    </div>
+
+
+    <div class="box" id="grooming">
+      <div class="tup4"></div>
+      <div class="lumao">
+        <h1 id="lumaotitle">撸猫</h1>
+        <h2>撸猫指南</h2>
+        <p>对于第一次见面的小猫，不建议上手摸，喂熟之后可以从摸摸头开始尝试.</p>
+        <p>猫咪对你表示友好，希望和你交朋友的表现：</p>
+        <ol>
+          <li>绕着你走动，头部、身侧或尾巴蹭人，是猫猫在问好。</li>
+          <li>用头蹭蹭你，鼻头戳你</li>
+          <li>.翻肚皮打滚，是在邀请你一起玩，注意! 这个时候摸猫猫可能会被咬!</li>
+        </ol>
+        <h2>注意：</h2>
+        <p>如果被猫抓伤，请及时前往医院问诊</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>-----------popularization of science-----------</p>
+    </div>
+    <script>
+      const datetimeBox = document.getElementById("datetime-box"); // get the div element
+      setInterval(() => {
+        const currentDate = new Date(); // create a new Date object
+        datetimeBox.innerHTML = currentDate.toLocaleString(); // set the innerHTML to the current date and time
+      }, 1000); // update every second
+    </script>
+  </div>
+
+</body>
+
+</html>

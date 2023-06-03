@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶牛</title>
+    <style>
+        body {
+            background-image: url('nainiubeijing.jpg');
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 20px rgb(182, 204, 204);
+        }
+
+        .text {
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 280px;
+            height: 5px;
+            background: linear-gradient(rgba(31, 31, 27, 0.751), rgba(24, 16, 25, 0.119));
+
+            color: rgb(249, 246, 235);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: translateY(100%); */
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            width: 320px;
+            height: 320px;
+            transition: 0.5s;
+            box-shadow: 4px 4px 5px rgb(18, 12, 1);
+        }
+
+        .item:hover .text {
+            transform: translateY(0);
+            width: 300px;
+            height: 200px;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .item .text {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="xxx" style="overflow: hidden;"></div>
+    <div class="container">
+        <div class="item">
+            <img src="nnchoudie.jpg" alt="choudie">
+            <div class="text">丑爹<br>性别：公 未绝育<br><br>上了年纪的丑爹，三期通吃，默默保护孩子，夜深人静时总能看见他蹲在顺丰快递站外面守护着奶牛和妹妹。对待小猫还是很友好的，看得出来他很孤独，可能是到处蹭饭使他接近人的机会多了，也能在一米之内瞅瞅你到底要给他什么吃的了。</div>
+        </div>
+        <div class="item">
+            <img src="nnxiaobaga.jpg" alt="xiaobaga">
+            <div class="text">小八嘎 <br> 性别：公 已绝育<br><br>性格：薛定谔亲人<br> 黑白奶牛色，嘴鼻周围一圈黑色，是移动门保卫室大八嘎的孩子之一。</div>
+        </div>
+        <div class="item">
+            <img src="nndabaga.jpg" alt="dabaga">
+            <div class="text">大八嘎 <br>性别：公 未绝育<br><br>长得还算不错的奶牛，很大一个猫。和学校里面所有的猫都不对付，天天和大黑打架，跳跳虎在旁边虚壮声势。</div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
